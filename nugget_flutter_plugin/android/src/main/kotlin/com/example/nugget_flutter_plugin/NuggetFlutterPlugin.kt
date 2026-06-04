@@ -110,7 +110,10 @@ class NuggetFlutterPlugin : FlutterPlugin, MethodCallHandler , ActivityAware {
 
                 try {
 
-                    if(isInitialized) return
+                    if(isInitialized) {
+                        result.success(true)
+                        return
+                    }
 
                     ChatSdk.initialize(
                         application,
