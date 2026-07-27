@@ -56,8 +56,8 @@ public class NuggetBusinessContextProviderImp: NuggetBusinessContextProviderDele
                                                type: type,
                                                ticketID: ticketID)
     }
-    
-    public func chatSupportBusinessContext() -> any NuggetChatBusinessContext {
-        businessContext
+
+    public func chatSupportBusinessContext(completion: @escaping (any NuggetChatBusinessContext) -> Void) {
+        completion(businessContext)
     }
 }

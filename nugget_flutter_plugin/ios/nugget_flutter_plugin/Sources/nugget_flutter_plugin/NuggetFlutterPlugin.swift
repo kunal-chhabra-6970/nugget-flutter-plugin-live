@@ -105,8 +105,8 @@ public class NuggetFlutterPlugin: NSObject, FlutterPlugin {
         
         self.nuggetFactory = NuggetSDK.initializeNuggetFactory(
             authDelegate: nuggetAuthProvider,
-            notificationDelegate: notificationDelegate,
             sdkConfigurationDelegate: sdkConfigurationDelegate,
+            notificationDelegate: notificationDelegate,
             chatBusinessContextDelegate: businessContextProviderDelegate,
             customThemeProviderDelegate: customThemeProviderDelegate,
             customFontProviderDelegate: customFontProviderDelegate,
